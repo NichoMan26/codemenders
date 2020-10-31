@@ -87,7 +87,7 @@ $(window).on('load', function () {
     btn.on('click', () =>{
         switch(operator){
             case undefined:
-                
+                console.log('w');
             case "addition":
                 result.val(addition(num1.val(), num2.val()))
             break
