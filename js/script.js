@@ -9,6 +9,7 @@ $(window).on('load', function () {
     let operatorBtns = $('.operator__btn')
     let operatorWrapper = $('.operatator')
     let operator = undefined
+    let prompt = $('.prompt')
 
     num1.focus() // automaticli made firs field in focus
 
@@ -87,7 +88,11 @@ $(window).on('load', function () {
     btn.on('click', () =>{
         switch(operator){
             case undefined:
-                console.log('w');
+                prompt.addClass('prompt__showed')
+                setTimeout(() => {
+                    prompt.removeClass('prompt__showed')
+                }, 3000)
+            break
             case "addition":
                 result.val(addition(num1.val(), num2.val()))
             break

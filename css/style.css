@@ -80,6 +80,27 @@ ul {
 .disabled {
   background-color: #bba007;
 }
+.prompt {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: -500px;
+  transform: translate(-50%);
+  width: 80%;
+  background-color: #e9e89f;
+  border: 3px solid red;
+  border-radius: 15px;
+  transition: 1s;
+}
+.prompt__showed {
+  top: 20px;
+}
+.prompt p {
+  margin: 10px;
+  color: red;
+  font-weight: 600;
+}
 @media screen and (max-device-width: 420px) {
   #num1,
   #num2 {

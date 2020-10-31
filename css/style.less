@@ -83,6 +83,27 @@ min-height: 2rem;
     background-color: rgb(187, 160, 7);
 }
 
+.prompt{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    top:-500px;
+    transform: translate(-50%);
+    width: 80%;
+    background-color: rgb(233, 232, 159);
+    border: 3px solid red;
+    border-radius: 15px;
+    transition: 1s;
+    &__showed{
+        top:20px;
+    }
+    p{
+        margin: 10px;
+        color: red;
+        font-weight: 600;
+    }
+}
 @media screen and (max-device-width: 420px) {
     #num1, #num2{
         width: 100px;
