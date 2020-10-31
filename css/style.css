@@ -77,6 +77,9 @@ ul {
   background-color: #49a3d8af;
   border: 0;
 }
+.disabled {
+  background-color: #bba007;
+}
 @media screen and (max-device-width: 420px) {
   #num1,
   #num2 {
