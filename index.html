@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codemenders</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <main class="calculator container">
+        <div class="row">
+            <form class="field col-md-8 ">
+                <div class="nums d-flex justify-content-between mb-4">
+                    <div class="num__wrapper d-flex flex-column">
+                        <label for="num1">NUM 1</label>
+                        <input class="border-0" id="num1" type="text">   
+                    </div>
+                    <div class="num__wrapper d-flex align-items-end">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                          </svg>
+                    </div>
+                    <div class="num__wrapper d-flex flex-column">
+                        <label for="num2">NUM 2</label>
+                        <input class="border-0" id="num2" type="text">   
+                    </div>
+                </div>
+                    <input readonly id='result' class="container border-left-0 border-top-0 border-right-0" type="text">
+                
+            </form>
+
+            <div class="numbers col-md-4">
+                <ul class="numbers__wrapper">
+                    <li class="number">1</li>
+                    <li class="number">2</li>
+                    <li class="number">3</li>
+                    <li class="number">4</li>
+                    <li class="number">5</li>
+                    <li class="number">6</li>
+                    <li class="number">7</li>
+                    <li class="number">8</li>
+                    <li class="number">9</li>
+                    <li class="number">0</li>
+                </ul>
+                <ul class="d-flex justify-content-between math_act-group">
+                    <li >
+                        <svg  width="3em" height="3em" viewBox="0 0 16 16" class="math_act bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </li>
+                    <li >
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="math_act bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                          </svg>
+                    </li>
+                    <li >
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="math_act bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                    </li>
+                    <li >
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="math_act bi bi-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.354 4.646a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                          </svg>
+                    </li>
+                </ul>
+                <button class="button">calculate</button>
+            </div>
+        </div>    
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>

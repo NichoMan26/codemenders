@@ -1,0 +1,85 @@
+* {
+  list-style-type: none;
+}
+ul {
+  padding: 0;
+}
+.calculator {
+  max-width: 800px;
+  padding: 10px;
+  border: 1px solid rgba(45, 47, 196, 0.418);
+}
+#num1,
+#num2 {
+  background-color: #2300a0af;
+  min-height: 2rem;
+}
+#result {
+  border-bottom: 3px solid #2300a0af;
+}
+#result:hover {
+  cursor: default;
+}
+#result:focus {
+  outline: 0;
+}
+.numbers__wrapper {
+  margin: 0 auto;
+  width: calc(50% - 20px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 170px;
+}
+.number {
+  border: 5px solid #3156ceaf;
+  border-radius: 50%;
+  background-color: rgba(169, 182, 206, 0.295);
+  margin: 6px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2300a0af;
+  width: 40px;
+  text-align: center;
+  line-height: 30px;
+  height: 40px;
+  transition: 0.1s;
+}
+.number:hover {
+  background-color: rgba(169, 182, 206, 0.8);
+  cursor: pointer;
+}
+.number:active {
+  background-color: #20cc7c;
+}
+.math_act {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: 0.1s;
+}
+.math_act:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.math_act:active {
+  background-color: #20cc7c;
+}
+.math_act-group {
+  margin: 10px auto;
+  width: 158px;
+}
+.button {
+  width: 158px;
+  margin: 0 auto;
+  display: block;
+  background-color: #49a3d8af;
+  border: 0;
+}
+@media screen and (max-device-width: 420px) {
+  #num1,
+  #num2 {
+    width: 100px;
+  }
+}
